@@ -1,7 +1,7 @@
 #include <shadow.h>
 #include <pwd.h>
 #include <unistd.h>
-#include "BarnabasBox/Barnabas.h"
+#include "BarnabasBox/barnabas.h"
 
 #ifndef PASS_MAX
 #define PASS_MAX 512
