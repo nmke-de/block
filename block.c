@@ -12,5 +12,11 @@ int main() {
 	if(!pw) return 1;
 	char buf[PASS_MAX];
 	binit();
+	//Dummy condition; use something to compare buf to the actual password
+	while(buf[0]) {
+		//Use a command that hides user input with termios or getpass()
+		bread(buf, PASS_MAX, "Password: ");
+		bwash();
+	}
 	bquit();
 }
